@@ -5,8 +5,8 @@ from nltk.corpus import stopwords
 
 
 txt = []
-nountxt = []
-with open('/Users/nmacrii/Desktop/python/Lab PSA 3/lab3/tweets.json') as f:
+pnountxt = []
+with open('/Probability and Aplied Statistics/Lab PSA 3/lab3/tweets.json') as f:
     data = json.load(f)
 
 for elem in data:
@@ -25,12 +25,11 @@ for elem in data:
 
     txt += cleartxt
 
-
 #txt = [nltk.stem.WordNetLemmatizer().lemmatize(word, pos='n') for word in txt]
 
 for i in nltk.pos_tag(txt):
-    if 'NN' in i[1] and len(i[0]) > 1:
-        nountxt.append(i[0])
+    if 'NNP' in i[1] and len(i[0]) > 1:
+        pnountxt.append(i[0])
 
-frequency_distribution = nltk.FreqDist(nountxt)
-print(frequency_distribution.most_common(12))
+frequency_distribution = nltk.FreqDist(pnountxt)
+print(frequency_distribution.most_common(11))

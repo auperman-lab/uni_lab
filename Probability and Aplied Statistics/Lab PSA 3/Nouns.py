@@ -1,12 +1,12 @@
 import json
 import re
-
-import matplotlib.pyplot as plt
 import nltk
+from nltk.corpus import stopwords
 
-word = input()
-dict = {}
-with open('/Users/nmacrii/Desktop/python/Lab PSA 3/lab3/tweets.json') as f:
+
+txt = []
+nountxt = []
+with open('/Probability and Aplied Statistics/Lab PSA 3/lab3/tweets.json') as f:
     data = json.load(f)
 
 for elem in data:
@@ -21,16 +21,16 @@ for elem in data:
     cleartxt = re.sub('\[.*?\]', ' ', cleartxt)
     cleartxt = re.sub("[^a-z0-9A-Z]", " ", cleartxt)
     cleartxt = nltk.tokenize.word_tokenize(cleartxt)
-    #cleartxt = [nltk.stem.WordNetLemmatizer().lemmatize(word, pos='n') for word in cleartxt]
-    for i in cleartxt:
-        if i == word:
-            if elem['created_at'][0:7] in dict:
-                dict[elem['created_at'][0:7]] += 1
-            else:
-                dict[elem['created_at'][0:7]] = 1
+    cleartxt = [word for word in cleartxt if not word.lower() in stopwords.words('english')]
+
+    txt += cleartxt
 
 
-time = list(dict.keys())
-numb = list(dict.values())
-plt.plot(time, numb)
-plt.show()
+#txt = [nltk.stem.WordNetLemmatizer().lemmatize(word, pos='n') for word in txt]
+
+for i in nltk.pos_tag(txt):
+    if 'NN' in i[1] and len(i[0]) > 1:
+        nountxt.append(i[0])
+
+frequency_distribution = nltk.FreqDist(nountxt)
+print(frequency_distribution.most_common(12))

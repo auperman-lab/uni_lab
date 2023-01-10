@@ -1,7 +1,7 @@
 import json
 
 
-with open('/Users/nmacrii/Desktop/python/Lab PSA 3/lab3/tweets.json') as f:
+with open('/Lab PSA 3/lab3/tweets.json') as f:
     data = json.load(f)
 
 hastags = []

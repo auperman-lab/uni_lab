@@ -8,7 +8,7 @@ dict = {}
 nouns = {}
 txt = ''
 
-with open('/Users/nmacrii/Desktop/python/Lab PSA 3/lab3/tweets.json') as f:
+with open('/Probability and Aplied Statistics/Lab PSA 3/lab3/tweets.json') as f:
     data = json.load(f)
 
 for elem in data:

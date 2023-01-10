@@ -2,10 +2,10 @@ import nltk
 import json
 import re
 
-with open('/Users/nmacrii/Desktop/python/Lab PSA 3/lab3/tweets.json') as f:
+with open('/Lab PSA 3/lab3/tweets.json') as f:
     data = json.load(f)
 
-d = open('/Users/nmacrii/Desktop/python/Lab PSA 3/lab3/AFINN-111.txt')
+d = open('/Lab PSA 3/lab3/AFINN-111.txt')
 
 lines = [line.split() for line in d]
 

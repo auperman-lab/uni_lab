@@ -1,6 +1,6 @@
 from PIL import Image
 import random
-img = Image.open('/Users/nmacrii/Desktop/python/Lab PSA 1/laboratory_work_math_files/danger_zone.png')
+img = Image.open('/Probability and Aplied Statistics/Lab PSA 1/laboratory_work_math_files/danger_zone.png')
 
 data = img.load()
 n = int(input())
