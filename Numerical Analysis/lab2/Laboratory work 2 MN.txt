@@ -1,0 +1,34 @@
+1. New computer game
+
+A group of students is developing a new computer game that involves complex physics calculations. They need to integrate
+the equations of motion to simulate the behaviour of objects in the game. Write a program that implements the Gauss-Legendre quadrature method to approximate the integral of the equations of motion over a specified range. The program should take as input the equations of motion, the range of integration, and the desired tolerance. The output should be the approximate value of the integral with an accuracy of at least the specified tolerance value
+
+
+2. Startup company
+
+You are working for a startup company that wants to analyse the number of visitors to their website over the last month.
+Unfortunately, the data they collected is incomplete, and they have gaps in their data. They want you to use interpolation
+to estimate the number of visitors on the missing days. Write a program that takes the dataset(is in email) and uses
+linear interpolation to estimate the number of visitors on the missing days. Plot the original data and the interpolated
+data on the same graph to visualise the results.
+
+
+3. Interpolation calculator
+
+Misa is working on a project to predict customer behaviour. She has a dataset that includes the number of items purchased
+and the amount of time spent on the website for each customer. She wants to build a model to predict the amount of time
+a customer will spend on the website based on the number of items they purchase. Misa knows that interpolation can be
+used to estimate the time spent for values that are not included in the dataset. Help Misa by building an interpolation
+calculator that uses different methods such as Lagrange, Piecewise linear, Newton, and Cubic Spline. Test the
+calculator with the provided dataset and compare the results of each method. Modify the calculator to include the
+Romberg integration method to estimate the area under the curve of the function.
+
+
+4. Lost city
+
+You are an explorer embarking on a quest to find the lost city hidden deep in a dense jungle. The journey is treacherous,
+and you need to navigate through rugged terrain and unpredictable weather conditions. To aid in your adventure, you
+carry a map that provides limited information about the terrain, such as elevation levels at specific coordinates.
+However, the map is incomplete and contains many missing data points. Your task is to use advanced interpolation
+methods to fill in such as Kriging, Radial Basis Functions, or Inverse Distance Weighting, to estimate the missing
+elevation values based on the available data and find the safest path to reach the lost city.

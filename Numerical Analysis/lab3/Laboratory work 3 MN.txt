@@ -1,0 +1,83 @@
+﻿1. Secret path
+
+You find yourself in a dense forest, standing before a great river. Legend has it that a hidden treasure lies on the
+other side, but a series of challenges must be overcome to reach it. You notice a set of stepping stones in the river,
+each labelled with a mathematical equation. These equations hold the key to unlocking the path across the river. Solve
+the system of linear equations represented by the stepping stones to determine the order in which you should step on
+them to reach the treasure. Each equation represents the coordinates of a stepping stone in terms of x and y. By solving
+the equations, you will unlock the correct path and successfully cross the river. You encounter five stepping stones
+labelled with mathematical equations. Solve the system of linear equations to determine the correct order in which to
+step on them:
+Stone 1: 2x - y = 4
+Stone 2: 3x + 2y = 7
+Stone 3: x + y = 3
+Stone 4: 4x - y = 1
+Stone 5: x - 3y = -2
+
+
+2. Influence network
+
+A team of sociologists is conducting a social network analysis to understand the dynamics of influence within a
+community. They have gathered data on the relationships between individuals and represented it using a connectivity
+matrix. Your task is to calculate the dominant eigenvalue and its corresponding eigenvector of this connectivity
+matrix. By unravelling the network of influence, you can identify the most influential members shaping the community's
+dynamics. Analyse the eigenvalues and eigenvectors to uncover the key individuals who act as opinion leaders and exert a
+significant impact on others within the community.
+
+
+3. Cloud computing
+As a software engineer focusing on cloud computing infrastructure, your goal is to optimise resource allocation for
+efficient task scheduling. This involves dynamically allocating computational resources among tasks or virtual machines
+to maximise resource utilisation and minimise response time. To accomplish this, you decide to use ordinary differential
+equations (ODEs) to model the utilisation of computational resources and their dynamic allocation over time. The system
+of ODEs that represents the resource allocation in cloud computing is as follows:
+
+Variables:
+R(t): Total available resources at time t
+U(t): Utilisation of resources at time t
+A(t): Arrival rate of tasks at time t
+D(t): Departure rate of completed tasks at time t
+
+ODEs:
+Resource Utilisation ODE:
+dU(t)/dt = A(t) - D(t)
+Resource Allocation ODE:
+dR(t)/dt = A(t) - D(t)
+In this system, the rate of change of resource utilisation (dU(t)/dt) depends on the arrival rate of tasks (A(t)) and the
+departure rate of completed tasks (D(t)). It quantifies the net change in resource utilisation over time. Similarly, the
+rate of change of total available resources (dR(t)/dt) is determined by the arrival rate of tasks (A(t)) and the
+departure rate of completed tasks (D(t)). It represents the net change in the total available resources over time.
+ 
+Your task is to numerically solve these coupled ODEs using appropriate numerical methods (e.g., Euler's method, Runge-Kutta methods)
+and analyse the resource utilisation patterns over time. Investigate how variations in the arrival rate, departure rate,
+and allocation policies impact the overall efficiency of resource allocation in cloud computing.
+
+
+4. Traffic simulation
+
+You have been tasked with developing a traffic simulation tool to study the flow of vehicles on a road network. The
+objective is to analyse the effects of different traffic conditions, road geometries, and traffic management strategies
+on congestion, travel times, and overall system performance. To accomplish this, you decide to utilise the Lighthill-Whitham-Richards (LWA)
+traffic flow model. The LWA model represents the dynamics of traffic flow by considering the traffic density and
+traffic velocity within each road segment. The road network is divided into segments, each characterised by a specific
+position. Your task is to implement the LWA traffic flow model and simulate the traffic flow over a specified duration.
+The LWA model represents the dynamics of traffic flow by considering the traffic density ρ(x, t) and traffic velocity v(x, t).
+In the context of your simulation, the road network is divided into segments, each characterised by a specific position x.
+
+The first equation to model traffic density is the conservation law:
+∂ρ/∂t + ∂(ρv)/∂x = 0
+This equation states that the rate of change of traffic density over time is equal to the net flow of vehicles in or out
+of a road segment. The traffic density ρ(x, t) represents the number of vehicles per unit distance at position x and time t.
+
+Next, the traffic velocity v(x, t) is determined using the LWA equation, which considers the desired velocity Vmax,
+traffic density ρ(x, t), and the congestion effect caused by traffic interactions:
+v(x, t) = Vmax * (1 - ρ(x, t) / ρmax)
+In this equation, Vmax represents the maximum velocity that can be achieved when the road segment is free of congestion.
+ρmax is the maximum traffic density at which the road segment is considered fully congested.
+ 
+To obtain the traffic flow q(x, t) passing through a given point per unit time, we calculate the product of traffic
+density and traffic velocity:
+q(x, t) = ρ(x, t) * v(x, t)
+By solving these equations numerically over time and space, you can simulate the traffic flow, observe congestion
+patterns, and analyse the effects of different road geometries, traffic conditions, and traffic management strategies on
+ travel times and overall system performance.
