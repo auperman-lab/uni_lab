@@ -1,0 +1,14 @@
+==> https://github.com/DrVasile/SDTM-Labs
+==> https://refactoring.guru
+
+0
+Implement 2 SOLID letters in a simple project.
+
+1
+https://github.com/DrVasile/SDTM-Labs/tree/master/Lab%231
+
+2
+https://github.com/DrVasile/SDTM-Labs/tree/master/Lab%232
+
+3
+https://github.com/DrVasile/SDTM-Labs/tree/master/Lab%233
